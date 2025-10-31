@@ -1,6 +1,6 @@
 //your JS code here. If required.
 // Function that returns a Promise
-function getMessage() {
+function sayHello() {
   return new Promise((resolve) => {
     setTimeout(() => {
       resolve("Hello, world!");
@@ -9,6 +9,6 @@ function getMessage() {
 }
 
 // Use the promise to update HTML element
-getMessage().then((message) => {
-  document.getElementById("output").textContent = message;
+sayHello().then((data) => {
+  document.getElementById("output").textContent = data;
 });
